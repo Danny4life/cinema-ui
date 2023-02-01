@@ -1,9 +1,11 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 //mport api from "./api/axiosConfig";
 
 import './App.css';
+import Layout from "./component/Layout";
 
 function App() {
 
@@ -31,7 +33,13 @@ function App() {
   
   return (
     <div className="App">
-     
+    
+
+     <Routes>
+      <Route path="/" element={ <Layout />}>
+
+      </Route>
+     </Routes>
     </div>
   );
 }
