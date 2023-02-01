@@ -5,6 +5,8 @@ const Layout = () => {
     return ( 
         <main>
             <Outlet />
+
+        
         </main>
      );
 }
